@@ -41,6 +41,21 @@ const submit = () => {
                 <InputError class="mt-2" :message="form.errors.name" />
             </div>
 
+            <div class="mt-2">
+                <InputLabel for="name" value="Aptos Address " />
+
+                <TextInput
+                    id="name"
+                    type="text"
+                    class="mt-1 block w-full"
+                    required
+                    autofocus
+                    autocomplete="name"
+                />
+
+                <InputError class="mt-2" :message="form.errors.name" />
+            </div>
+
             <div class="mt-4">
                 <InputLabel for="email" value="Email" />
 
@@ -55,6 +70,7 @@ const submit = () => {
 
                 <InputError class="mt-2" :message="form.errors.email" />
             </div>
+
 
             <div class="mt-4">
                 <InputLabel for="password" value="Password" />
